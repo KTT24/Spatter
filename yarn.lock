@@ -3246,7 +3246,7 @@ __metadata:
     eslint-plugin-vue: ^9.5.1
     nuxt: ^2.15.8
     sass: ^1.62.0
-    sass-loader: 10
+    sass-loader: 13
     scss: ^0.2.4
     vue: ^2.7.10
     vue-server-renderer: ^2.7.10
@@ -6523,7 +6523,7 @@ __metadata:
 
 "fsevents@patch:fsevents@^1.2.7#~builtin<compat/fsevents>":
   version: 1.2.13
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=18f3a7"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=d11327"
   dependencies:
     bindings: ^1.5.0
     nan: ^2.12.1
@@ -6533,7 +6533,7 @@ __metadata:
 
 "fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -7981,7 +7981,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"klona@npm:^2.0.4":
+"klona@npm:^2.0.4, klona@npm:^2.0.6":
   version: 2.0.6
   resolution: "klona@npm:2.0.6"
   checksum: ac9ee3732e42b96feb67faae4d27cf49494e8a3bf3fa7115ce242fe04786788e0aff4741a07a45a2462e2079aa983d73d38519c85d65b70ef11447bbc3c58ce7
@@ -10838,7 +10838,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
   version: 1.22.3
-  resolution: "resolve@patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"
   dependencies:
     is-core-module: ^2.12.0
     path-parse: ^1.0.7
@@ -10996,20 +10996,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:10":
-  version: 10.4.1
-  resolution: "sass-loader@npm:10.4.1"
+"sass-loader@npm:13":
+  version: 13.2.2
+  resolution: "sass-loader@npm:13.2.2"
   dependencies:
-    klona: ^2.0.4
-    loader-utils: ^2.0.0
+    klona: ^2.0.6
     neo-async: ^2.6.2
-    schema-utils: ^3.0.0
-    semver: ^7.3.2
   peerDependencies:
     fibers: ">= 3.1.0"
     node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     sass: ^1.3.0
-    webpack: ^4.36.0 || ^5.0.0
+    sass-embedded: "*"
+    webpack: ^5.0.0
   peerDependenciesMeta:
     fibers:
       optional: true
@@ -11017,7 +11015,9 @@ __metadata:
       optional: true
     sass:
       optional: true
-  checksum: df9a65a62247e95305299ccbdf212cffdcdb69490928aecdf4f3dcf539b5302ed7cbffa663f83c5fc3ce0864decf84257a9ce484f6df4cb4426feeb88445dcd0
+    sass-embedded:
+      optional: true
+  checksum: 0368e4eaa4e2109bb6c6b6bc7dbfb9d8e412a0ab965f98672d336e84bd103575a1551cfe98395f20335b350f2a94e67f7c816cc8e3f4ab85147a1c1221e22fd8
   languageName: node
   linkType: hard
 
@@ -12239,7 +12239,7 @@ __metadata:
 
 "typescript@patch:typescript@~4.2#~builtin<compat/typescript>":
   version: 4.2.4
-  resolution: "typescript@patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=bda367"
+  resolution: "typescript@patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=334f98"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
