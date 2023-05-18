@@ -31,6 +31,27 @@
       enforcement professionals, and students. Spatter is also a great resource for anyone who is simply curious about
       blood spatter.
     </p>
+
+    <h1 class="about" style="text-align: right; padding-right: 50px; padding-top: 25px">Acknowledgements</h1>
+    <h3 style="text-align: right; padding-right: 85px; font-weight: bold">In Honor of Sarah E. Ring</h3>
+    <p style="text-align: right; padding-right: 65px; font-weight: 250; color: #686868">
+      "The one who relight the fire in me"
+    </p>
+
+    <div class="spacer"></div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-text">
+          <h3>Spatter</h3>
+          <p>© 2023 Spatter. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="kutterthornton.com"> Kutter Thornton </a>|<a href="#"> Privacy Policy </a>|
+          <a href="#"> Terms of Services </a>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -282,5 +303,41 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     padding: 15px;
+  }
+
+  .footer {
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #550d0d;
+    color: white;
+    text-align: center;
+  }
+
+  .footer > p {
+    font-family: "Assistant";
+    font-size: 12px;
+  }
+
+  .footer > a {
+    font-family: "Assistant";
+    font-size: 12px;
+    color: white;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+  }
+
+  .footer-links > a:hover {
+    color: #ff0000;
+  }
+
+  .spacer {
+    height: 300px;
   }
 </style>
