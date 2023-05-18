@@ -13,9 +13,6 @@
         <NuxtLink to="/blood">
           <button><span>Blood</span></button>
         </NuxtLink>
-        <NuxtLink to="/help">
-          <button><span>Help (NOT WORKING)</span></button>
-        </NuxtLink>
       </div>
     </div>
   </div>
