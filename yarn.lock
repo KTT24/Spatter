@@ -4367,21 +4367,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-app@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "nuxt-app@workspace:."
-  dependencies:
-    "@fortawesome/fontawesome-svg-core": ^6.4.0
-    "@fortawesome/free-brands-svg-icons": ^6.4.0
-    "@fortawesome/free-regular-svg-icons": ^6.4.0
-    "@fortawesome/free-solid-svg-icons": ^6.4.0
-    "@nuxtjs/google-fonts": ^3.0.0
-    "@types/node": ^18
-    nuxt: ^3.4.2
-    sass: ^1.62.0
-  languageName: unknown
-  linkType: soft
-
 "nuxt@npm:^3.4.2":
   version: 3.4.2
   resolution: "nuxt@npm:3.4.2"
@@ -5583,6 +5568,21 @@ __metadata:
   checksum: b57981c05611afef31605732b598ccf65124a9fcb03b833532659ac4d29ac0f7bfacbc0d6c5a28a03e84c7510e7e556d758d0bb57786e214660016fb94279316
   languageName: node
   linkType: hard
+
+"spatter@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "spatter@workspace:."
+  dependencies:
+    "@fortawesome/fontawesome-svg-core": ^6.4.0
+    "@fortawesome/free-brands-svg-icons": ^6.4.0
+    "@fortawesome/free-regular-svg-icons": ^6.4.0
+    "@fortawesome/free-solid-svg-icons": ^6.4.0
+    "@nuxtjs/google-fonts": ^3.0.0
+    "@types/node": ^18
+    nuxt: ^3.4.2
+    sass: ^1.62.0
+  languageName: unknown
+  linkType: soft
 
 "ssri@npm:^9.0.0":
   version: 9.0.1

@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "spatter",
   "private": true,
   "scripts": {
     "build": "nuxi build",

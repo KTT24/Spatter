@@ -142,7 +142,7 @@ button {
     display: none;
   }
   background: transparent;
-  background-image: url("assets/images/nav-bg-fill-red copy.png");
+  background-image: url("assets/images/nav-bg-fill-red.png");
   background-repeat: repeat-x;
   background-position: 0 -100%;
   transition: 0.95s ease;
@@ -157,6 +157,13 @@ span {
   text-transform: uppercase;
   font-family: "Assistant";
   font-size: 14px;
+}
+
+.cards {
+  align-self: center;
+  justify-content: center;
+  margin: 5% 0 0 5%;
+  padding: 0 0 0 0;
 }
 
 /*--------------------------------------------------------------------------*/

@@ -1,35 +1,58 @@
 <template>
-  <navbar />
+  <div class="color-header">
+    <div class="nav-menu-frame">
+      <navbar />
+    </div>
+    <div class="color-header-text">
+      <h1>Blood Patterns</h1>
+    </div>
+  </div>
 
   <div class="cards">
-    <nuxt-link to="90">
-      <card>
-        <h4>90º Drops</h4>
-        <p>
-          Drip patterns will be large and irregular in shape, with small satellite spatters around the periphery of the
-          central parent stain on the horizontal and nearby vertical surfaces....
-        </p>
-      </card>
-    </nuxt-link>
+    <card>
+      <h4>90º Drops</h4>
+      <p>{{ Drops }}</p>
+    </card>
     <card>
       <h4>Smear</h4>
       <p>
-        90º Spatter is a web application that allows you to create and share your own 90º Spatter art. It is a simple
-        and fun way to create something beautiful.
+        {{ Smear }}
       </p>
     </card>
     <card>
       <h4>Trail</h4>
       <p>
-        90º Spatter is a web application that allows you to create and share your own 90º Spatter art. It is a simple
-        and fun way to create something beautiful.
+        {{ Trail }}
       </p>
     </card>
     <card>
-      <h4>Aterail Spurt</h4>
+      <h4>Cast Off</h4>
       <p>
-        90º Spatter is a web application that allows you to create and share your own 90º Spatter art. It is a simple
-        and fun way to create something beautiful.
+        {{ CastOff }}
+      </p>
+    </card>
+  </div>
+  <div class="cards">
+    <card>
+      <h4>Expirated Blood</h4>
+      <p>{{ ExpiratedBlood }}</p>
+    </card>
+    <card>
+      <h4>High Velocity Impact</h4>
+      <p>
+        {{ HighVelocityImpact }}
+      </p>
+    </card>
+    <card>
+      <h4>Medium Velocity Impact</h4>
+      <p>
+        {{ MediumVelocityImpact }}
+      </p>
+    </card>
+    <card>
+      <h4>Low Velocity Impact</h4>
+      <p>
+        {{ LowVelocityImpact }}
       </p>
     </card>
   </div>
@@ -51,11 +74,19 @@
 </template>
 
 <script>
+  import bloodData from "../assets/other/data/bloodData.json"
   export default {
-    name: "about",
+    name: "blood",
     data() {
       return {
-        msg: "Welcome to Spatter",
+        Drops: bloodData.bloodTypes["90DegreeDrops"].description,
+        Smear: bloodData.bloodTypes["Smear"].description,
+        Trail: bloodData.bloodTypes["Trail"].description,
+        CastOff: bloodData.bloodTypes["CastOff"].description,
+        ExpiratedBlood: bloodData.bloodTypes["ExpiratedBlood"].description,
+        HighVelocityImpact: bloodData.bloodTypes["HighVelocityImpact"].description,
+        LowVelocityImpact: bloodData.bloodTypes["LowVelocityImpact"].description,
+        MediumVelocityImpact: bloodData.bloodTypes["MediumVelocityImpact"].description,
       }
     },
   }

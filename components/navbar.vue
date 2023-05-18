@@ -7,7 +7,7 @@
   <div class="Page nav-page">
     <div class="nav-menu">
       <div class="nav-items">
-        <NuxtLink to="/home">
+        <NuxtLink to="/">
           <button><span>Home</span></button>
         </NuxtLink>
         <NuxtLink to="/blood">
