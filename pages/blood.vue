@@ -1,67 +1,64 @@
 <template>
-  <div class="color-header">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet" />
-
-    <div class="nav-menu-frame">
-      <navbar />
+  <div>
+    <div class="color-header">
+      <div class="nav-menu-frame">
+        <navbar />
+      </div>
+      <div class="color-header-text">
+        <h1>Blood Patterns</h1>
+      </div>
     </div>
-    <div class="color-header-text">
-      <h1>Blood Patterns</h1>
+
+    <div class="cards">
+      <card>
+        <h4>90º Drops</h4>
+        <p>{{ Drops }}</p>
+      </card>
+      <card>
+        <h4>Smear</h4>
+        <p>
+          {{ Smear }}
+        </p>
+      </card>
+      <card>
+        <h4>Trail</h4>
+        <p>
+          {{ Trail }}
+        </p>
+      </card>
+      <card>
+        <h4>Cast Off</h4>
+        <p>
+          {{ CastOff }}
+        </p>
+      </card>
     </div>
-  </div>
+    <div class="cards">
+      <card>
+        <h4>Expirated Blood</h4>
+        <p>{{ ExpiratedBlood }}</p>
+      </card>
+      <card>
+        <h4>High Velocity Impact</h4>
+        <p>
+          {{ HighVelocityImpact }}
+        </p>
+      </card>
+      <card>
+        <h4>Medium Velocity Impact</h4>
+        <p>
+          {{ MediumVelocityImpact }}
+        </p>
+      </card>
+      <card>
+        <h4>Low Velocity Impact</h4>
+        <p>
+          {{ LowVelocityImpact }}
+        </p>
+      </card>
+    </div>
 
-  <div class="cards">
-    <card>
-      <h4>90º Drops</h4>
-      <p>{{ Drops }}</p>
-    </card>
-    <card>
-      <h4>Smear</h4>
-      <p>
-        {{ Smear }}
-      </p>
-    </card>
-    <card>
-      <h4>Trail</h4>
-      <p>
-        {{ Trail }}
-      </p>
-    </card>
-    <card>
-      <h4>Cast Off</h4>
-      <p>
-        {{ CastOff }}
-      </p>
-    </card>
-  </div>
-  <card>
-    <h4>Expirated Blood</h4>
-    <p>{{ ExpiratedBlood }}</p>
-  </card>
-  <card>
-    <h4>High Velocity Impact</h4>
-    <p>
-      {{ HighVelocityImpact }}
-    </p>
-  </card>
-  <card>
-    <h4>Medium Velocity Impact</h4>
-    <p>
-      {{ MediumVelocityImpact }}
-    </p>
-  </card>
-  <card>
-    <h4>Low Velocity Impact</h4>
-    <p>
-      {{ LowVelocityImpact }}
-    </p>
-  </card>
-
-  <!-- <footer class="footer">
+    <!-- <footer class="footer">
         <div class="content has-text-centered">
             <p>
                 <strong>Spatter</strong> by <a href="">@spatter</a>. The source
@@ -75,6 +72,7 @@
             </p>
         </div>
     </footer> -->
+  </div>
 </template>
 
 <style lang="scss">
