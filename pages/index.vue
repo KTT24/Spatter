@@ -104,6 +104,9 @@
   /*--------------------------------------------------------------------------*/
   /* 3. Global styles
 /*--------------------------------------------------------------------------*/
+  * {
+    font-family: "Assistant", sans-serif;
+  }
 
   .section-fade {
     animation: fadein 2s;
@@ -303,6 +306,10 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     padding: 15px;
+  }
+
+  .about {
+    font-family: "Assistant" !important ;
   }
 
   .footer {
