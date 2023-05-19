@@ -767,11 +767,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:^3.2.3":
-  version: 3.4.3
-  resolution: "@nuxt/kit@npm:3.4.3"
+"@nuxt/kit@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "@nuxt/kit@npm:3.5.0"
   dependencies:
-    "@nuxt/schema": 3.4.3
+    "@nuxt/schema": 3.5.0
     c12: ^1.4.1
     consola: ^3.1.0
     defu: ^6.1.2
@@ -781,15 +781,15 @@ __metadata:
     jiti: ^1.18.2
     knitwork: ^1.0.0
     lodash.template: ^4.5.0
-    mlly: ^1.2.0
+    mlly: ^1.2.1
     pathe: ^1.1.0
-    pkg-types: ^1.0.2
+    pkg-types: ^1.0.3
     scule: ^1.0.0
-    semver: ^7.5.0
+    semver: ^7.5.1
     unctx: ^2.3.0
     unimport: ^3.0.6
     untyped: ^1.3.2
-  checksum: a1c6d0830aa0c048ab82c8726b5db711451a385f3b1a7974bb191e83bc28ee3d00a544a6cdcbe370508e7b07f701004ea77e10d4bee62952cf4fb43e4c0a5825
+  checksum: 77baea10b72ebda658fd14519270e4dfac46cc8e8f1aaad17058d23a847fd369f4b74b4c0d907146991cbca950e728e2304fa3e471d878ebcd2cba5e4776ccdf
   languageName: node
   linkType: hard
 
@@ -810,20 +810,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.4.3":
-  version: 3.4.3
-  resolution: "@nuxt/schema@npm:3.4.3"
+"@nuxt/schema@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@nuxt/schema@npm:3.5.0"
   dependencies:
     defu: ^6.1.2
     hookable: ^5.5.3
     pathe: ^1.1.0
-    pkg-types: ^1.0.2
+    pkg-types: ^1.0.3
     postcss-import-resolver: ^2.0.0
-    std-env: ^3.3.2
-    ufo: ^1.1.1
+    std-env: ^3.3.3
+    ufo: ^1.1.2
     unimport: ^3.0.6
     untyped: ^1.3.2
-  checksum: 6d249a4cfb7dcdd36d3fd2fb72761f7103a1d769f776acf691f7f848050b23459325f94b2a5ea97b7d1be32175bb522e903aef233fc7c8674a5865fec2d34092
+  checksum: 50aee2aebd77e043036ff00d73cbb4b48795ad2d52033fec85900d183320b4633854f85a13e22038e6b536fb0ec373c396ea040a9e7a71afe845f2d1cef6e1f6
   languageName: node
   linkType: hard
 
@@ -908,14 +908,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/google-fonts@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@nuxtjs/google-fonts@npm:3.0.0"
+"@nuxtjs/google-fonts@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@nuxtjs/google-fonts@npm:3.0.1"
   dependencies:
-    "@nuxt/kit": ^3.2.3
-    google-fonts-helper: ^3.2.4
+    "@nuxt/kit": ^3.5.0
+    google-fonts-helper: ^3.3.0
     pathe: ^1.1.0
-  checksum: 6707ad56f9409fdefdae08ff1b14e03dea9045f0cbba43ebd151d3fda9a2e3032c691b5276784a1f347add33cd67d0bc635422471120cfacdc24d1cd7b87d60b
+  checksum: 8ac90e9f86aa8baf622ddd3266f58395555388b4c957095425d167b069be0fc92846e183505de7543bc4841bd773455a3fc4c7d7c0fcccb8e28e9992d94e6502
   languageName: node
   linkType: hard
 
@@ -2988,7 +2988,7 @@ __metadata:
 
 "fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -3203,7 +3203,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-fonts-helper@npm:^3.2.4":
+"google-fonts-helper@npm:^3.3.0":
   version: 3.3.0
   resolution: "google-fonts-helper@npm:3.3.0"
   dependencies:
@@ -4421,6 +4421,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mlly@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "mlly@npm:1.2.1"
+  dependencies:
+    acorn: ^8.8.2
+    pathe: ^1.1.0
+    pkg-types: ^1.0.3
+    ufo: ^1.1.2
+  checksum: 82939436ec0e1c53e400d86fd571bd005090383b3fa49d5d8b9df4b388b24bae2b7b2f0369ef0c905d29fb35377cd4724d2bf5e5cd130d922849f74948bb81f0
+  languageName: node
+  linkType: hard
+
 "mri@npm:^1.2.0":
   version: 1.2.0
   resolution: "mri@npm:1.2.0"
@@ -5156,6 +5168,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pkg-types@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "pkg-types@npm:1.0.3"
+  dependencies:
+    jsonc-parser: ^3.2.0
+    mlly: ^1.2.0
+    pathe: ^1.1.0
+  checksum: 4b305c834b912ddcc8a0fe77530c0b0321fe340396f84cbb87aecdbc126606f47f2178f23b8639e71a4870f9631c7217aef52ffed0ae17ea2dbbe7e43d116a6e
+  languageName: node
+  linkType: hard
+
 "postcss-calc@npm:^8.2.3":
   version: 8.2.4
   resolution: "postcss-calc@npm:8.2.4"
@@ -5765,7 +5788,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
   version: 1.22.3
-  resolution: "resolve@patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"
   dependencies:
     is-core-module: ^2.12.0
     path-parse: ^1.0.7
@@ -5988,6 +6011,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"semver@npm:^7.5.1":
+  version: 7.5.1
+  resolution: "semver@npm:7.5.1"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: d16dbedad53c65b086f79524b9ef766bf38670b2395bdad5c957f824dcc566b624988013564f4812bcace3f9d405355c3635e2007396a39d1bffc71cfec4a2fc
+  languageName: node
+  linkType: hard
+
 "send@npm:0.18.0":
   version: 0.18.0
   resolution: "send@npm:0.18.0"
@@ -6182,7 +6216,7 @@ __metadata:
     "@fortawesome/free-brands-svg-icons": ^6.4.0
     "@fortawesome/free-regular-svg-icons": ^6.4.0
     "@fortawesome/free-solid-svg-icons": ^6.4.0
-    "@nuxtjs/google-fonts": ^3.0.0
+    "@nuxtjs/google-fonts": ^3.0.1
     "@types/node": ^18
     node-sass: ^8.0.0
     nuxt: ^3.4.2
@@ -6261,6 +6295,13 @@ __metadata:
   version: 3.3.2
   resolution: "std-env@npm:3.3.2"
   checksum: c02256bb041ba1870d23f8360bc7e47a9cf1fabcd02c8b7c4246d48f2c6bb47b4f45c70964348844e6d36521df84c4a9d09d468654b51e0eb5c600e3392b4570
+  languageName: node
+  linkType: hard
+
+"std-env@npm:^3.3.3":
+  version: 3.3.3
+  resolution: "std-env@npm:3.3.3"
+  checksum: 6665f6d8bd63aae432d3eb9abbd7322847ad0d902603e6dce1e8051b4f42ceeb4f7f96a4faf70bb05ce65ceee2dc982502b701575c8a58b1bfad29f3dbb19f81
   languageName: node
   linkType: hard
 
@@ -6621,6 +6662,13 @@ __metadata:
   version: 1.1.1
   resolution: "ufo@npm:1.1.1"
   checksum: 6bd210ed93d8c0dedd76c456b1d1dfb0e3b08c2216ee6080e61f0f545de0bac24b3d3a5530cd6a403810855f8d8fc3922583965296142e04cfc287442635e6c7
+  languageName: node
+  linkType: hard
+
+"ufo@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "ufo@npm:1.1.2"
+  checksum: 83c940a6a23b6d4fc0cd116265bb5dcf88ab34a408ad9196e413270ca607a4781c09b547dc518f43caee128a096f20fe80b5a0e62b4bcc0a868619896106d048
   languageName: node
   linkType: hard
 
