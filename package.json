@@ -20,6 +20,6 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "node-sass": "^8.0.0",
     "sass": "^1.62.1",
-    "sass-loader": "^13.2.2"
+    "sass-loader": "^13.3.1"
   }
 }
