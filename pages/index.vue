@@ -1,13 +1,14 @@
 <script lang="ts">
-  export default {
-    name: "index",
-  }
+export default {
+  name: "index",
+}
+
 </script>
 
 <template>
   <div>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet" />
@@ -16,28 +17,24 @@
       <div class="nav-menu-frame">
         <navbar />
       </div>
-      <div class="color-header-text">
-        <img src="~/assets/images/SpatterLogo.svg" width="35%" alt="" class="section-5fade" />
+      <div class="color-header-text section-fade">
+        <nuxt-img src="/SpatterLogoWhite.png" sizes="100vw sm:50vw md:400px"/>
         <h3>Have a bloody good time!</h3>
       </div>
     </div>
 
-    <h1 class="about" style="text-align: left; padding-left: 50px; padding-top: 25px">About</h1>
-    <p style="text-align: left; padding-left: 50px; width: 55%; font-weight: 250">
-      Spatter is a modern and clean wiki for all things blood spatter. It is a comprehensive resource for information on
-      the science, history, and application of bloodstain pattern analysis (BPA). Spatter provides users with access to
-      a wide range of resources, including articles, images, videos, and interactive tools. Spatter is a valuable
-      resource for anyone interested in learning more about BPA. It is an essential tool for forensic scientists, law
-      enforcement professionals, and students. Spatter is also a great resource for anyone who is simply curious about
-      blood spatter.
-    </p>
-
-    <h1 class="about" style="text-align: right; padding-right: 50px; padding-top: 25px">Acknowledgements</h1>
-    <h3 style="text-align: right; padding-right: 85px; font-weight: bold">In Honor of Sarah E. Ring</h3>
-    <p style="text-align: right; padding-right: 65px; font-weight: 250; color: #686868">
-      "The one who relight the fire in me"
-    </p>
-
+    <div class="section2-fade">
+      <h1 class="about" style="text-align: left; padding-left: 50px; padding-top: 25px">About</h1>
+      <p style="text-align: left; padding-left: 50px; width: 55%; font-weight: 250">
+        Spatter is a modern and clean wiki for all things blood spatter. It is a comprehensive resource for information on
+        the science, history, and application of bloodstain pattern analysis (BPA). Spatter provides users with access to
+        a wide range of resources, including articles, images, videos, and interactive tools. Spatter is a valuable
+        resource for anyone interested in learning more about BPA. It is an essential tool for forensic scientists, law
+        enforcement professionals, and students. Spatter is also a great resource for anyone who is simply curious about
+        blood spatter.
+      </p>
+    </div>
+    
     <div class="spacer"></div>
 
     <footer>
@@ -73,7 +70,7 @@
 
   // Background colors dark
   $background-dark-1: #212121;
-  $background-dark-2: #000000;
+  $background-dark-2: #212326;
 
   // Text colors dark
   $text-color-dark: #ffffff;
@@ -110,6 +107,28 @@
 
   .section-fade {
     animation: fadein 2s;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .section2-fade {
+    animation: fadein2 3s;
+  }
+
+  @keyframes fadein2 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   a {
@@ -190,43 +209,7 @@
     padding: 10px;
   }
 
-  /* THIS CODE BELOW IS NECESSARY */
-  button {
-    width: 100px;
-    padding: 12px;
-    border-radius: 20px;
-    color: white;
-    border: 0px solid #bd1d1d;
-    border-radius: 25px 25px 25px 25px;
-    cursor: pointer;
-    ::-ms-tooltip {
-      display: none;
-    }
-    background: transparent;
-    background-image: url("assets/images/nav-bg-fill-red.png");
-    background-repeat: repeat-x;
-    background-position: 0 -100%;
-    transition: 0.95s ease;
-  }
-
-  button:hover {
-    background-position: center;
-  }
-
-  span {
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-family: "Assistant";
-    font-size: 14px;
-  }
-
-  .cards {
-    align-self: center;
-    justify-content: center;
-    margin: 5% 0 0 5%;
-    padding: 0 0 0 0;
-  }
-
+  
   /*--------------------------------------------------------------------------*/
   /* 3. Header styles
 /*--------------------------------------------------------------------------*/
@@ -320,6 +303,7 @@
     background-color: #550d0d;
     color: white;
     text-align: center;
+    border-radius: 45px 45px 00px 0px;
   }
 
   .footer > p {

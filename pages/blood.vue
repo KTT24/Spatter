@@ -93,7 +93,7 @@
 
   // Background colors dark
   $background-dark-1: #212121;
-  $background-dark-2: #000000;
+  $background-dark-2: #212326;
 
   // Text colors dark
   $text-color-dark: #ffffff;
@@ -209,30 +209,6 @@
   .nav-menu > .nav-items > a {
     padding: 10px;
   }
-
-  /* THIS CODE BELOW IS NECESSARY */
-  button {
-    width: 100px;
-    padding: 12px;
-    border-radius: 20px;
-    color: white;
-    border: 0px solid #bd1d1d;
-    border-radius: 25px 25px 25px 25px;
-    cursor: pointer;
-    ::-ms-tooltip {
-      display: none;
-    }
-    background: transparent;
-    background-image: url("assets/images/nav-bg-fill-red.png");
-    background-repeat: repeat-x;
-    background-position: 0 -100%;
-    transition: 0.95s ease;
-  }
-
-  button:hover {
-    background-position: center;
-  }
-
   span {
     font-weight: bolder;
     text-transform: uppercase;

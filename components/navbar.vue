@@ -6,12 +6,12 @@
     rel="stylesheet" />
   <div class="Page nav-page">
     <div class="nav-menu">
-      <div class="nav-items">
+      <div class="nav-items ">
         <NuxtLink to="/">
-          <button><span>Home</span></button>
+          <button class="glow-on-hover"><span>Home</span></button>
         </NuxtLink>
         <NuxtLink to="/blood">
-          <button><span>Blood</span></button>
+          <button class="glow-on-hover"><span>Blood</span></button>
         </NuxtLink>
       </div>
     </div>
@@ -150,35 +150,7 @@
     padding: 10px;
   }
 
-  /* THIS CODE BELOW IS NECESSARY */
-  button {
-    width: 100px;
-    padding: 12px;
-    border-radius: 20px;
-    color: white;
-    border: 0px solid #bd1d1d;
-    border-radius: 25px 25px 25px 25px;
-    cursor: pointer;
-    ::-ms-tooltip {
-      display: none;
-    }
-    background: transparent;
-    background-image: url("assets/images/nav-bg-fill-red.png");
-    background-repeat: repeat-x;
-    background-position: 0 -100%;
-    transition: 0.95s ease;
-  }
-
-  button:hover {
-    background-position: center;
-  }
-
-  span {
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-family: "Assistant";
-    font-size: 14px;
-  }
+  
 
   .cards {
     align-self: center;
