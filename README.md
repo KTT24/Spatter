@@ -1,10 +1,4 @@
 ![Spatter](https://i.imgur.com/1EtX83B.png)
-
-<h1 align="center">
-  <br>
-  Spatter
-  <br>
-</h1>
 <p align="center">A Forensics Project</p>
 
 

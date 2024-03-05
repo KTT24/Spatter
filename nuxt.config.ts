@@ -8,6 +8,9 @@ export default {
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
+  image: {
+    format: ['webp']
+  },
   vite: {
     css: {
       preprocessorOptions: {
