@@ -4,9 +4,17 @@ import { fileURLToPath } from "url"
 
 export default {
   buildModules: ["@nuxtjs/style-resources", "@nuxtjs/vite", "@nuxtjs/google-fonts"],
-  css: ['~/assets/style.css'],
-  modules: ['@nuxt/image',],
+  modules: ["@nuxt/image"],
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: "page", mode: "out-in" },
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/main.scss" as *;',
+        },
+      },
+    },
   },
 }
