@@ -17,7 +17,7 @@
         <navbar />
       </div>
       <div class="color-header-text section-fade">
-        <nuxt-img src="/SpatterLogoWhite.png" sizes="100vw sm:50vw md:400px" />
+        <NuxtImg src="/SpatterLogoWhite.png" alt="Logo" width="450" />
         <h3>Have a bloody good time!</h3>
       </div>
     </div>
