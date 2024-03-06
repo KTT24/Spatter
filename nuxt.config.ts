@@ -2,14 +2,10 @@
 
 import { fileURLToPath } from "url"
 
-export default {
-  buildModules: ["@nuxtjs/style-resources", "@nuxtjs/vite", "@nuxtjs/google-fonts"],
+export default defineNuxtConfig({
   modules: ["@nuxt/image"],
   app: {
     pageTransition: { name: "page", mode: "out-in" },
-  },
-  image: {
-    format: ['webp']
   },
   vite: {
     css: {
@@ -20,4 +16,4 @@ export default {
       },
     },
   },
-}
+})
