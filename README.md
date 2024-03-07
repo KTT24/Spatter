@@ -1,20 +1,17 @@
-![Spatter](https://i.imgur.com/1EtX83B.png)
-<p align="center">A Forensics Project</p>
+![Spatter Logo](docs/ReadmeBanner.gif)
+
+<div align="center">
+<img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fspatter.kutterthornton.com%2F&style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyBmaWxsPSIjZmZmZmZmIiB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHJva2U9IiNmZmZmZmYiPgoNPGcgaWQ9IlNWR1JlcG9fYmdDYXJyaWVyIiBzdHJva2Utd2lkdGg9IjAiLz4KDTxnIGlkPSJTVkdSZXBvX3RyYWNlckNhcnJpZXIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgoNPGcgaWQ9IlNWR1JlcG9faWNvbkNhcnJpZXIiPgoNPHBhdGggZD0iTTMsMjBWMTBIOFYyMUg0QTEsMSwwLDAsMSwzLDIwWk0yMSw0YTEsMSwwLDAsMC0xLTFINEExLDEsMCwwLDAsMyw0VjhIMjFaTTIwLDIxYTEsMSwwLDAsMCwxLTFWMTBIMTBWMjFaIi8%2BCg08L2c%2BCg08L3N2Zz4%3D"> <img src="https://img.shields.io/github/actions/workflow/status/KTT24/spatter/deploy.yml?style=for-the-badge&amp;logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyBmaWxsPSIjZmZmZmZmIiB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0cm9rZT0iI2ZmZmZmZiI%2BCg08ZyBpZD0iU1ZHUmVwb19iZ0NhcnJpZXIiIHN0cm9rZS13aWR0aD0iMCIvPgoNPGcgaWQ9IlNWR1JlcG9fdHJhY2VyQ2FycmllciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8%2BCg08ZyBpZD0iU1ZHUmVwb19pY29uQ2FycmllciI%2BCg08dGl0bGU%2BaW9uaWNvbnMtdjUtaDwvdGl0bGU%2BCg08cGF0aCBkPSJNNDY5LjU0LDEyMC41MmgwYTE2LDE2LDAsMCwwLTI1LjU0LTRMMzgyLjU2LDE3OGExNi4xMiwxNi4xMiwwLDAsMS0yMi42MywwTDMzMy4zNywxNTEuNGExNiwxNiwwLDAsMSwwLTIyLjYzbDYxLjE4LTYxLjE5YTE2LDE2LDAsMCwwLTQuNzgtMjUuOTJoMEMzNDMuNTYsMjEsMjg1Ljg4LDMxLjc4LDI0OS41MSw2Ny44OGMtMzAuOSwzMC42OC00MC4xMSw3OC42Mi0yNS4yNSwxMzEuNTNhMTUuODksMTUuODksMCwwLDEtNC40OSwxNkw1My4yOSwzNjcuNDZhNjQuMTcsNjQuMTcsMCwxLDAsOTAuNiw5MC42NEwyOTcuNTcsMjkxLjI1YTE1LjksMTUuOSwwLDAsMSwxNS43Ny00LjU3LDE3OS4zLDE3OS4zLDAsMCwwLDQ2LjIyLDYuMzdjMzMuNCwwLDYyLjcxLTEwLjgxLDgzLjg1LTMxLjY0QzQ4Mi41NiwyMjIuODQsNDg4LjUzLDE1Ny40Miw0NjkuNTQsMTIwLjUyWk05OS40OCw0NDcuMTVhMzIsMzIsMCwxLDEsMjguMzQtMjguMzVBMzIsMzIsMCwwLDEsOTkuNDgsNDQ3LjE1WiIvPgoNPC9nPgoNPC9zdmc%2B&amp;logoColor=ffffff" alt="GitHub Actions Workflow Status"> 
+</div>
 
 
-## Setup
 
+
+## Setup 
 Make sure to install the dependencies:
 
 ```bash
-# yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
 ```
 
 ## Development Server
@@ -22,21 +19,21 @@ pnpm install
 Start the development server on `http://localhost:3000`
 
 ```bash
-npm run dev
+yarn dev
 ```
+
 
 ## Production
 
 Build the application for production:
 
 ```bash
-npm run build
+yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn start
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
